@@ -1,0 +1,45 @@
+<div class='add-comment-frame'>
+    <div class='add-comment-frame-header'>
+        <span class='headline'>{{post.title}}</span></a>
+        <span class='posted'>Posted by {{post.user.username}} on {{format_date post.date}}</span>
+    </div>
+    <div class='post-content flow-text'>{{post.content}}</div>
+</div>
+
+<div class='add-comment-frame'>
+    <div class='add-comment-frame-header'><span class='headline'>Comments</span>
+    </div>
+    {{#each post.comments}}
+    <div class='post-content flow-text'>
+        {{comment}}<br />
+        ~ {{user.username}}, {{format_date date}}
+    </div>
+    {{/each}}
+</div>
+
+<div class='add-comment-frame'>
+    <div class='add-comment-frame-header'>
+        <span class='headline'>Leave a Comment</span>
+    </div>
+    <div>
+        <form class='form add-comment-form'>
+            <div>
+
+                <div class='label-area'>
+                    <label for='comment' class='validate'>Comment</label>
+                </div>
+                <div class='text-field'>
+                    <textarea id='comment' rows='4'></textarea>
+                </div>
+
+                <input id='post_id' type='hidden' class='validate' value='{{post.id}}'>
+                <button class='comment-btn submit'>Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</div>
+
+<script src='/js/addcomment.js'></script>

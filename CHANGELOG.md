@@ -39,3 +39,6 @@
 36. Continual computer crashes is making it almost impossible to continue - I don't need to submit this anyway. Deleted github repository.
 37. Decided I would try & finish this - restored from backup & finished the Comment code.
 38. Checking & uploading to GitHub - routes look OK in Insomnia
+39. Final files copied into app aftre yet another system crash!!
+40. Test OK.
+41. CSS really needs refactoring. Might have been better to implement using cards rather the card simulation I used.

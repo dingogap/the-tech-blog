@@ -1,0 +1,14 @@
+{{#if posts.length}}
+<ul class='dashboard-list'>
+  {{#each posts as |post|}}<li>
+    <a class='btn btn-flat submit dashboard-list-btn' data-id='{{post.id}}' href='/dashboard/edit/{{post.id}}'><span
+        class='dashboard-list-title'>{{post.title}}</span><span
+        class='dashboard-list-date'>{{ format_date post.date}}</span></a>
+  </li>
+  {{/each}}
+</ul>
+{{/if}}
+
+<div class='add-post'>
+  <a class='add-post-btn submit btn-flat' href='/dashboard/add'>+ New Post</a>
+</div>

@@ -1,0 +1,28 @@
+`<div class='edit-post-frame'>
+    <div class='add-post-frame-header'><span class='headline'>Edit Post</span>
+        <div>
+            <form class='form edit-post-form'>
+                <div>
+                    <div class='label-area'>
+                        <label for='title'>Title</label>
+                    </div>
+                    <div class='input-field'>
+                        <input id='title' type='text' class='validate' value='{{post.title}}' >
+                    </div>
+                    <div class='label-area'>
+                        <label for='content' class='validate'>Content</label>
+                    </div>
+                    <div class='text-field'>
+                        <textarea id='content' rows='4'>{{post.content}}</textarea>
+                    </div>
+                    <input id='id' type='hidden' class='validate' value='{{post.id}}' >
+                    <button class='btn submit'>Update Post</button>
+                    <button class='delete-btn submit'>Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src='/js/editpost.js'></script>
+<script src='/js/deletepost.js'></script>

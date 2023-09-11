@@ -1,0 +1,64 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <title>Tech Blog</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <!--Import materialize.css-->
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'
+    />
+    <link rel='stylesheet' href='/css/style.css' />
+    <link
+      href='https://fonts.googleapis.com/icon?family=Material+Icons'
+      rel='stylesheet'
+    />
+    <link rel='stylesheet' href='/css/style.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  </head>
+
+  <body>
+
+    <header>
+      <div class='navbar row'>
+        <nav>
+          <div class='nav-wrapper header-row'>
+            <ul class='left'>
+              <li class='menu-item'><a href='/'>Home</a></li>
+              <li class='menu-item'><a href='/dashboard'>Dashboard</a></li>
+              {{#if logged_in}}
+                <li class='menu-item'><a id='logout' href='/'>Logout</a></li>
+              {{else}}
+                <li class='menu-item'><a href='/login'>Login </a></li>
+                <li class='menu-item'><a href='/signup'>Sign Up</a></li>
+              {{/if}}
+            </ul>
+          </div>
+          <div class='header-row'>
+            <a href='/' class='brand-logo'>The Tech Blog</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{{body}}}
+    </main>
+
+    {{#if logged_in}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+
+    <script
+      src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js'
+    ></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
+    ></script>
+    <script src='https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js'></script>
+    <script>dayjs().format()</script>
+
+  </body>
+
+</html>

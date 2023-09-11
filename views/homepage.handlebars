@@ -1,0 +1,11 @@
+{{#if posts.length}}
+  {{#each posts as |post|}}
+    <div class='post-frame'>
+      <div class='post-header'>
+        <a href='/post/{{post.id}}'><span class='headline' >{{post.title}}</span></a>
+        <span class='posted'>Posted by {{post.user.username}} on {{format_date post.date}}</span>
+      </div>
+      <div class='post-content flow-text'>{{post.content}}</div>
+    </div>
+  {{/each}}
+{{/if}}
