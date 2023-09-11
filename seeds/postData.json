@@ -1,0 +1,20 @@
+[
+  {
+    "user_id": "1",
+    "title": "Object-Relational Mapping",
+    "content": "I have really loved learning about ORMS. It's really simplified the way I create queries!",
+    "date": "2023-09-01"
+  },
+  {
+    "user_id": "2",
+    "title": "Authentication vs. Authorization",
+    "content": "There is a difference between authentication and authorization. Authentication means confirming your own identity, whereas authorization means being allowed access to the system.",
+    "date": "2023-09-04"
+  },
+  {
+    "user_id": "3",
+    "title": "Why MVC is so important",
+    "content": "MVC allows developers to maintain a true separation of concerns, devising their code between the Model layer for data, the View layer for design, and the Controller layer for application logic.",
+    "date": "2023-09-06"
+  }
+]
