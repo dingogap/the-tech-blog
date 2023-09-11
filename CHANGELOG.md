@@ -42,3 +42,5 @@
 39. Final files copied into app aftre yet another system crash!!
 40. Test OK.
 41. CSS really needs refactoring. Might have been better to implement using cards rather the card simulation I used.
+42. Running successfully on Heroku
+43. Added README.md
