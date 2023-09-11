@@ -37,4 +37,5 @@
 34. Removed unused code from Project2 I used as starter 
 35. Added get Post Routes to show Post & wait for Comment
 36. Continual computer crashes is making it almost impossible to continue - I don't need to submit this anyway. Deleted github repository.
-37. 
+37. Decided I would try & finish this - restored from backup & finished the Comment code.
+38. Checking & uploading to GitHub - routes look OK in Insomnia
