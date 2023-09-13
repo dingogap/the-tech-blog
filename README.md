@@ -32,6 +32,11 @@ https://rocky-fortress-22725-12e56a192bc3.herokuapp.com/
 ## Home Page Image
 ![The Tech Blog](/assets/theTechBlog.png)
 
+## ChangeLog
+
+See The Tech Blog [Change Log][def7]
+
+
 ## Installation
 
 The Tech Blog backend requires node.js, Express, Dotenv, MySQL, Sequelize to be installed. MySQL must be installed and running on the server.
@@ -80,6 +85,7 @@ The Tech Blog website is built using the following technologies:
 [def4]: https://www.npmjs.com/package/express-handlebars
 [def5]: https://materializecss.com/
 [def6]: https://day.js.org/docs/en/installation/node-js
+[def7]: CHANGELOG.md
 
 
 
