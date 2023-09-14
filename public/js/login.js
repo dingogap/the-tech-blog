@@ -14,7 +14,17 @@ const loginFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
-      alert(response.statusText);
+      // Drag Activity
+
+      $('.error-modal-close').text('Cancel');
+      $('#error-modal').modal();
+      $('.error-msg').text('Incorrect username or password, please try again');
+      $('#error-modal').modal('open');
+
+      $('.error-modal-close').click(function (event) {
+        $('error-modal').modal('close');
+      });
+
     }
   }
 };
