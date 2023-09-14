@@ -290,3 +290,12 @@ textarea {
     font-size: 1.7rem;
     width: 100%
 }
+
+.error-modal-close {
+    background-color: var(--long-button);
+    color: var(--long-button-text);
+}
+
+.error-modal-close:hover {
+    background-color: var(--long-button-hover);
+}
